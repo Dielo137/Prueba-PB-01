@@ -26,7 +26,7 @@ class Computadora(Dispositivo):
         self.ramGB = ramGB
 
     def descripcion(self):
-        return f"Disositivo de marca {self.marca}, modelo {self.modelo}, con {self.ramGB}"
+        return f"Dispositivo de marca {self.marca}, modelo {self.modelo}, con {self.ramGB}"
     
 class Telefono(Dispositivo):
     
@@ -36,3 +36,12 @@ class Telefono(Dispositivo):
         
     def descripcion(self):
         return f"Dispositivo de marca {self.marca}, modelo {self.modelo}, con {self.camaraMG}"
+    
+class Tablet(Dispositivo):
+    
+    def __init__(self,marca,modelo,precio,tamañopantalla):
+        super().__init__(marca,modelo,precio)
+        self.tamañopantalla = tamañopantalla
+        
+    def descripcion(self):
+        return f"Dispositivo de marca {self.marca}, modelo {self.modelo}, con {self.tamañopantalla}"
