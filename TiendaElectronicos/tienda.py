@@ -22,7 +22,7 @@ class Tienda:
 #Y al final total_inventario obtiene el valor final del inventario al sumar todos sus valores
     def mostrar_catalogo(self):
 
-            print("---  Catálogo de la Concesionaria  ---")
+            print("---  Catálogo de la Tienda ---")
             
             if not self.dispositivos:
                 print("El catálogo está vacio. Añade algunos vehiculos")
